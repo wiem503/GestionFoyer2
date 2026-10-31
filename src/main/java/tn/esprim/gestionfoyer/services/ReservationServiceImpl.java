@@ -1,4 +1,12 @@
 package tn.esprim.gestionfoyer.services;
 
-public class ReservationServiceImpl {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import tn.esprim.gestionfoyer.repositories.ReservationRepository;
+
+@Service
+public class ReservationServiceImpl implements IReservationService {
+
+    @Autowired
+    private ReservationRepository reservationRepo;
 }

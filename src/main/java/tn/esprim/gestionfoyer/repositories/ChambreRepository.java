@@ -7,4 +7,5 @@ import tn.esprim.gestionfoyer.entities.Chambre;
 @Repository
 public interface ChambreRepository extends JpaRepository<Chambre, Long> {
 
+
 }

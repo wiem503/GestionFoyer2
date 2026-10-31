@@ -1,4 +1,13 @@
 package tn.esprim.gestionfoyer.services;
 
-public class EtudiantServiceImpl {
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import tn.esprim.gestionfoyer.repositories.EtudiantRepository;
+
+@Service
+public class EtudiantServiceImpl implements IEtudiantService{
+
+    @Autowired
+    private EtudiantRepository etudiantRepo;
 }
